@@ -628,7 +628,7 @@ export class ChatOpenAI
       completion_tokens: completionTokens,
       prompt_tokens: promptTokens,
       total_tokens: totalTokens,
-    } = data.usage ?? {};
+    } = data?.usage ?? {};
 
     if (completionTokens) {
       tokenUsage.completionTokens =
