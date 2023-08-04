@@ -505,7 +505,7 @@ export class ChatOpenAI
                   resolve(response);
                 } else {
                   const data = JSON.parse(event.data);
-                  if (!data.id) return;
+                  // if (!data.id) return;
                   if (data?.error) {
                     if (rejected) {
                       return;
